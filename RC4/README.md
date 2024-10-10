@@ -49,7 +49,6 @@ You can use this script to encrypt and decrypt any plaintext using a custom key.
 
 ## Example
 Here's an example of how the program works:
-
     ```bash
     Enter the key: secretkey
     Enter the plaintext: hello world
