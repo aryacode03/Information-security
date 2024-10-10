@@ -38,14 +38,14 @@ You can use this script to encrypt and decrypt any plaintext using a custom key.
 
 2. **Input: The script will prompt you to enter the following**:
 
-A key: This is the secret key used for both encryption and decryption.
-A plaintext: This is the message or data you want to encrypt.
+    A key: This is the secret key used for both encryption and decryption.
+    A plaintext: This is the message or data you want to encrypt.
 
 3. **Encryption and Decryption: After entering the key and plaintext, the program will**:
 
-Encrypt the plaintext using the provided key.
-Show the process of generating the keystream and applying XOR operations.
-Decrypt the ciphertext to verify correctness.
+    Encrypt the plaintext using the provided key.
+    Show the process of generating the keystream and applying XOR operations.
+    Decrypt the ciphertext to verify correctness.
 
 ## Example
 Here's an example of how the program works:
