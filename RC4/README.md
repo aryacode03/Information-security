@@ -8,9 +8,6 @@ This is a Python implementation of the **RC4 stream cipher** algorithm, adapted 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Example](#example)
-- [Contributing](#contributing)
-- [License](#license)
-- [References](#references)
 
 ## About the Project
 
@@ -31,3 +28,51 @@ This project is a **Python adaptation** of the original RC4 implementation writt
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/rc4-encryption-python.git
+
+## Usage
+You can use this script to encrypt and decrypt any plaintext using a custom key.
+
+1. **Running the script**:
+    ```bash
+    rc4.py
+
+2. **Input: The script will prompt you to enter the following**:
+
+A key: This is the secret key used for both encryption and decryption.
+A plaintext: This is the message or data you want to encrypt.
+
+3. **Encryption and Decryption: After entering the key and plaintext, the program will**:
+
+Encrypt the plaintext using the provided key.
+Show the process of generating the keystream and applying XOR operations.
+Decrypt the ciphertext to verify correctness.
+
+## Example
+Here's an example of how the program works:
+
+    ```bash
+    Enter the key: secretkey
+    Enter the plaintext: hello world
+
+    --- Initializing S-box ---
+      i: 0, Key char: 's' (ord: 115), j: 115
+      i: 1, Key char: 'e' (ord: 101), j: 217
+      ...
+
+    --- Starting Encryption ---
+    laintext: hello world
+
+    --- Generating Stream Key and XOR Process ---
+
+    Step 1:
+      i: 1, j: 217, S[i]: 137, S[j]: 86
+      Stream key byte: 115 (from S[t]: S[115])
+      Char 'h' (ord: 104) XOR with stream key 115 = 27 (chr: \x1b)
+    ...
+
+    Encrypted Ciphertext: \x1b\x0e\x03\x07\x00,\x04\x1f\x06\x12
+
+    --- Starting Decryption ---
+    Ciphertext: \x1b\x0e\x03\x07\x00,\x04\x1f\x06\x12
+
+    Decrypted Plaintext: hello world
