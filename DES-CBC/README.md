@@ -13,7 +13,7 @@ This is a Python implementation of the DES (Data Encryption Standard) with CBC (
 
 DES is a symmetric-key algorithm that processes data in blocks of 64 bits using a 56-bit key. The CBC mode, when applied to DES, improves its security by introducing randomness with an initialization vector (IV) and chaining each block's encryption with the previous block's output.
 
-This project is a Python adaptation of the original DES-CBC implementation written in C by tayyipozturk. The C code was refactored into Python while maintaining the core functionality of DES and CBC mode.
+This project is a Python adaptation of the original DES-CBC implementation written in C by [tayyipozturk](https://github.com/tayyipozturk/DES-CBC.git). The C code was refactored into Python while maintaining the core functionality of DES and CBC mode.
 
 ## How DES-CBC Works
 
